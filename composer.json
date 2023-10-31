@@ -1,0 +1,24 @@
+{
+  "name": "mkaliszuk/dummy-news-site",
+  "require": {
+    "php": ">=8.0",
+    "twig/twig": "^3.7",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DummyNewsSite\\": "src/"
+    }
+  },
+  "scripts": {
+    "migrations": [
+      "php sqlite_migrations.php"
+    ],
+    "post-install-cmd": [
+      "@migrations"
+    ],
+    "post-update-cmd": [
+      "@migrations"
+    ]
+  }
+}

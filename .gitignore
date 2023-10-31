@@ -1,0 +1,4 @@
+.idea
+vendor
+src/Repository/database.db
+composer.lock
